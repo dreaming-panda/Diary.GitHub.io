@@ -11,9 +11,14 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# 1 参数选择问题:
+    memory_intensive 和 compute_intensive的分类可能不是很有意义, 而配对更加关心的是对带宽的使用和程序可扩展能力,因此在调度中需要选择更有效的参数.并且还需要设计一个多级调度机制,并且设置相应的阀值.
+##  2 通信方式问题:
+    对于有些程序,如果连续调用众多kernel用现有的系统调用机制会引发很大的overhead, 所以需要更换通信方式.
+###  3  Scheduler设计问题:
+    如果遇到一个程序,有很长的cpu段,并且后面跟随一个kernel,那么在运行cpu部分时,站在kiv的角度应该如何看待这一部分程序? 如果直接将其看成后面kernel所具有的kiv的某一位,可能会引发这个机制性能的下降.
+#### 4  系统设计问题:
+     如有必要,可以在GPU上再设计一个调度器,使得可以在GPU上实现更加细粒度的划分.
 
 - Bulleted
 - List
