@@ -1,16 +1,5 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/dreaming-panda/Diary.GitHub.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
+Diary_AIR_SCC tsinghua 2020/8/3
 # 1 参数选择问题:
     memory_intensive 和 compute_intensive的分类可能不是很有意义, 而配对更加关心的是对带宽的使用和程序可扩展能力,因此在调度中需要选择更有效的参数.并且还需要设计一个多级调度机制,并且设置相应的阀值.
 ##  2 通信方式问题:
@@ -20,23 +9,3 @@ Syntax highlighted code block
 #### 4  系统设计问题:
      如有必要,可以在GPU上再设计一个调度器,使得可以在GPU上实现更加细粒度的划分.
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dreaming-panda/Diary.GitHub.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
